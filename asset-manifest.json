@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/rickypedia/static/css/main.073c9b0a.css",
+    "main.js": "/rickypedia/static/js/main.5b76554f.js",
+    "static/js/787.33bb4dd3.chunk.js": "/rickypedia/static/js/787.33bb4dd3.chunk.js",
+    "index.html": "/rickypedia/index.html",
+    "main.073c9b0a.css.map": "/rickypedia/static/css/main.073c9b0a.css.map",
+    "main.5b76554f.js.map": "/rickypedia/static/js/main.5b76554f.js.map",
+    "787.33bb4dd3.chunk.js.map": "/rickypedia/static/js/787.33bb4dd3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.5b76554f.js"
+  ]
+}
