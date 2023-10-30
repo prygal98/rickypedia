@@ -1,0 +1,12 @@
+/* App.css ou autre fichier CSS global */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: border-box; /* Ceci est pour s'assurer que les marges et les bordures sont incluses dans la largeur/largeur totale */
+}
