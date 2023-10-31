@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/rickypedia/static/css/main.073c9b0a.css",
-    "main.js": "/rickypedia/static/js/main.5b76554f.js",
-    "static/js/787.33bb4dd3.chunk.js": "/rickypedia/static/js/787.33bb4dd3.chunk.js",
+    "main.css": "/rickypedia/static/css/main.edcfd19e.css",
+    "main.js": "/rickypedia/static/js/main.a51f73a5.js",
+    "static/media/mo.png": "/rickypedia/static/media/mo.2c8c8a06f1432bbd8a81.png",
+    "static/media/ricko.png": "/rickypedia/static/media/ricko.96b724168ef27e6bd721.png",
     "index.html": "/rickypedia/index.html",
-    "main.073c9b0a.css.map": "/rickypedia/static/css/main.073c9b0a.css.map",
-    "main.5b76554f.js.map": "/rickypedia/static/js/main.5b76554f.js.map",
-    "787.33bb4dd3.chunk.js.map": "/rickypedia/static/js/787.33bb4dd3.chunk.js.map"
+    "main.edcfd19e.css.map": "/rickypedia/static/css/main.edcfd19e.css.map",
+    "main.a51f73a5.js.map": "/rickypedia/static/js/main.a51f73a5.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.5b76554f.js"
+    "static/css/main.edcfd19e.css",
+    "static/js/main.a51f73a5.js"
   ]
 }
