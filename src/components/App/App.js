@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import CharacterList from "../CharacterList";
 import Header from "../Header/Header";
+import Rick from '../../ricko.png';
+import CustomCursor from "../Custom/CustomCursor";
 import NextButton from '../Button/NextButton';
 import Footer from '../Footer/Footer';
 
@@ -56,6 +58,7 @@ const App = () => {
 
     return (
         <>
+            <CustomCursor imageSrc={Rick} />
             <Header />
             <div data-aos="fade-in">
                 <CharacterList characters={characters} episodes={episodes} />

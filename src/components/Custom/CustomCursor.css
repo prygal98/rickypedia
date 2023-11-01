@@ -1,0 +1,12 @@
+/* CustomCursor.css */
+.custom-cursor {
+    position: fixed;
+    width: 40px; /* Taille de l'image ou de l'élément */
+    height: 40px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 9999;
+  }
+  
