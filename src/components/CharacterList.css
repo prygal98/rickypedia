@@ -1,5 +1,3 @@
-/* CharacterList.css */
-
 .character-list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -14,6 +12,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: transform 0.3s, box-shadow 0.3s; /* Effet de transition doux */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+.character-card:hover {
+    transform: scale(1.05); /* Agrandit légèrement */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Ombre plus intense lors du survol */
 }
 
 .character-card img {

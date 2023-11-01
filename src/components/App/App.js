@@ -1,7 +1,13 @@
 import React, { useState, useEffect } from "react";
 import CharacterList from "../CharacterList";
-import './App.css'
+import Header from "../Header/Header";
+import NextButton from '../Button/NextButton';
+import Footer from '../Footer/Footer';
+
+import './App.css';
 import axios from "axios";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 
 const App = () => {
     const [characters, setCharacters] = useState([]);
@@ -11,11 +17,16 @@ const App = () => {
     const [episodes, setEpisodes] = useState({});
 
     useEffect(() => {
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+
         setLoading(true);
         axios.get(currentPageUrl).then(res => {
             setLoading(false);
             setNextPageUrl(res.data.info.next);
-            setCharacters(res.data.results);  // Ici, on remplace au lieu de concaténer.
+            setCharacters(res.data.results);
         });
     }, [currentPageUrl]);
 
@@ -33,7 +44,7 @@ const App = () => {
                 }
             });
         });
-    }, [characters]);
+    }, [characters,episodes]);
 
     function goToNextPage() {
         if (newPageUrl) {
@@ -45,8 +56,12 @@ const App = () => {
 
     return (
         <>
-            <CharacterList characters={characters} episodes={episodes} />
-            {newPageUrl && <button onClick={goToNextPage}>Afficher les personnages suivants</button>}
+            <Header />
+            <div data-aos="fade-in">
+                <CharacterList characters={characters} episodes={episodes} />
+            </div>
+            <NextButton goToNextPage={goToNextPage} newPageUrl={newPageUrl} />
+            <Footer />
         </>
     );
 }

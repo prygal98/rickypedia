@@ -1,4 +1,5 @@
 /* App.css ou autre fichier CSS global */
+@import 'aos/dist/aos.css';
 
 body, html {
     margin: 0;

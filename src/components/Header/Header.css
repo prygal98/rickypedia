@@ -1,2 +1,33 @@
+/* Header.css */
+
+.app-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f7f7f7;
+    padding: 10px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-logo {
+    width: 150px;
+    height: auto;
+    transition: width 0.3s ease-in-out;
+}
+
+.header-logo2 {
+    width: 200px;
+    height: auto;
+    transition: width 0.3s ease-in-out;
+}
+
+
+.header-title {
+    font-size: 1.5rem;
+    color: #333;
+}
 
   

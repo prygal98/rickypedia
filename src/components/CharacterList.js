@@ -1,11 +1,15 @@
 import React from 'react';
 import './CharacterList.css';
+import 'aos/dist/aos.css'; // Importez les styles AOS
+import AOS from 'aos';
+
+AOS.init(); // Initialisez AOS
 
 export default function CharacterList({ characters, episodes }) {
     return (
         <div className="character-list">
             {characters.map(character => (
-                <div key={character.id} className="character-card">
+                <div key={character.id} className="character-card" data-aos="zoom-in">
                     <img src={character.image} alt={character.name} />
                     <h3>{character.name}</h3>
                     <p>Genre: {character.gender}</p>
@@ -27,5 +31,3 @@ export default function CharacterList({ characters, episodes }) {
         </div>
     );
 }
-
-
